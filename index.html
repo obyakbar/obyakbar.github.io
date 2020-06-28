@@ -5,11 +5,23 @@
 	<title>Oby Akbar</title>
 	
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+	<style>
+		body
+		{
+		 background-color:rgba(43, 165, 137, 0.45);
+		 font-family: 'Roboto Mono', monospace;
+		}
+	</style>
 </head>
 <body>
 	<p id="msg"></p>
 	<script>
-		swal('Welcome to my page');
+		swal({
+			title	: "Terimakasih",
+			text	: "Atas kunjungan anda!",
+			icon	: "info"
+		});
 		document.getElementById('msg').innerHTML = 
 		"This is a my first page thank you..";
 	</script>
