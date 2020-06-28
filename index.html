@@ -5,25 +5,65 @@
 	<title>Oby Akbar</title>
 	
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+	<link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/examples/cover/cover.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
 	<style>
-		body
-		{
-		 background-color:rgba(43, 165, 137, 0.45);
-		 font-family: 'Roboto Mono', monospace;
-		}
+		.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+		@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .bg{
+      	background-color: #2f2e37;
+      }
+      body {
+      	font-family: 'Roboto Mono', monospace;
+      }
 	</style>
 </head>
-<body>
-	<p id="msg"></p>
+<body class="text-center bg">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">ObyAkbar</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="www.facebook.com/obyakbar.9">Contact</a>
+      </nav>
+    </div>
+  </header>
+   <main role="main" class="inner cover">
+    <h1 class="cover-heading">Assalamualaikum</h1>
+    <p></p>
+    <p class="lead">Saya Robi sumitro, biasa dipaggil oby, saya tinggal disalah satu pulau daerah Provisi Aceh, yaitu Kabupaten Simeulue.. ya dipulau ini saya lahir dan dibesarkan.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-outline-light btn-md">Learn more</a>
+    </p>
+  </main>
 	<script>
 		swal({
-			title	: "Terimakasih",
-			text	: "Atas kunjungan anda!",
+			title	: "Selamat datang",
+			text	: "Terimakasih atas kunjungannya!",
 			icon	: "success"
 		});
-		document.getElementById('msg').innerHTML = 
-		"This is a my first page thank you..";
 	</script>
+
+	<footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Hand crafted , by <a href="#">oby akbar</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
